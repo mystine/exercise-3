@@ -36,7 +36,7 @@ h1{
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Istok Web', sans-serif;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -60,15 +60,18 @@ header {
 
 .navigation ul {
     padding: 0;
-    background-color: #4B0082
 }
 
 .navigation li {
+    border-top: 5px solid;
+    border-color: #DDA0DD;
+    width: 100%;
     list-style-type: none;
 }
 
-.navigation li:first-child a {
-  border-top: 1px solid #ccc;
+.navigation li:hover {
+    background-color: #DDA0DD;
+    border-color: #DDA0DD;
 }
 
 .navigation li a {
@@ -77,16 +80,18 @@ header {
     text-align: center;
     text-transform: uppercase;
     padding: .5em 1em;
-    border-bottom: 1px solid #ccc;
     text-decoration: none;
+}
+
+.navigation li a:hover {
+    color: #4B0082; 
 }
 
 .icon-open-btn,
 .icon-close-btn {
-  text-decoration: none;
-    border: none;
-  height: 40px;
-  width: 40px;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
     color: #DDA0DD;
 }
 
@@ -96,7 +101,6 @@ header {
   width: 40px;
   display: inline-block;
   padding: 13px 11px;
-  border: 1px solid #ccc;
 }
 
 .icon-open-btnn span,
@@ -155,13 +159,19 @@ header {
 }
 
 @media only screen and (min-width: 60em) {
-  .icon-open-btn,
-  .icon-close-btn {
-    display: none;
-  }
+    .icon-open-btn,
+    .icon-close-btn {
+        display: none;
+    }
+    
+    .navigation li {
+        border: none;
+        font-size: 20px;
+    }
+
 }
 
 body.noscript .navigation {
-  position: static;
-  right: auto;
+    position: static;
+    right: auto;
 }
